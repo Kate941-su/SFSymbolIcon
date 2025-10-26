@@ -8,23 +8,19 @@
 import Foundation
 import SwiftUI
 
-enum WarningLeve {
+public enum SFSymbolAssertLevel {
     case fatal
     case assert
     case debug
 }
 
-extension EnvironmentValues {
-    @Entry var SymbolIcon: SFSymbolIcon = .init(warningLevel: .assert)
-}
-
 public class SFSymbolIcon {
     private var allSymbols: [String] = []
-    private var warningLevel: WarningLeve
+    private var level: SFSymbolAssertLevel
     private var cacheName: String? = nil
     
-    init(warningLevel: WarningLeve = .assert) {
-        self.warningLevel = warningLevel
+    init(level: SFSymbolAssertLevel = .assert) {
+        self.level = level
         loadAllSymbols()
     }
 
@@ -50,7 +46,7 @@ public class SFSymbolIcon {
         guard allSymbols.contains(systemName) else {
             cacheName = nil
             let message = "\(systemName) is not exist or only can be used higher OS versions."
-            switch warningLevel {
+            switch level {
             case .debug:
                 print("‼️ \(message)")
                 return nil

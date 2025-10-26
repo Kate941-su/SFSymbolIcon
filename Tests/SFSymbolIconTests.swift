@@ -11,18 +11,18 @@ import XCTest
 final class SFSymbolIconTests: XCTestCase {
     
     func testSymbolIconInitialization() throws {
-        let symbolIcon = SFSymbolIcon(warningLevel: .debug)
+        let symbolIcon = SFSymbolIcon(level: .debug)
         XCTAssertNotNil(symbolIcon)
     }
     
     func testIconSafeWithValidSymbol() throws {
-        let symbolIcon = SFSymbolIcon(warningLevel: .debug)
+        let symbolIcon = SFSymbolIcon(level: .debug)
         let icon = symbolIcon.IconSafe(systemName: "heart.fill")
         XCTAssertNotNil(icon)
     }
     
     func testIconSafeWithInvalidSymbol() throws {
-        let symbolIcon = SFSymbolIcon(warningLevel: .debug)
+        let symbolIcon = SFSymbolIcon(level: .debug)
         let icon = symbolIcon.IconSafe(systemName: "nonexistent.symbol")
         XCTAssertNil(icon)
     }
