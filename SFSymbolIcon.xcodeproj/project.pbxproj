@@ -31,14 +31,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		CE01D9F32EAE17D0005BF168 /* SFSymbolIcon */ = {
+		CE01D9F32EAE17D0005BF168 /* Example */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SFSymbolIcon;
+			path = Example;
 			sourceTree = "<group>";
 		};
-		CE01DA002EAE17D0005BF168 /* SFSymbolIconTests */ = {
+		CE01DA002EAE17D0005BF168 /* Tests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SFSymbolIconTests;
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		CE01DA1D2EAE1B11005BF168 /* Sources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -65,8 +70,9 @@
 		CE01D9E72EAE17D0005BF168 = {
 			isa = PBXGroup;
 			children = (
-				CE01D9F32EAE17D0005BF168 /* SFSymbolIcon */,
-				CE01DA002EAE17D0005BF168 /* SFSymbolIconTests */,
+				CE01DA1D2EAE1B11005BF168 /* Sources */,
+				CE01D9F32EAE17D0005BF168 /* Example */,
+				CE01DA002EAE17D0005BF168 /* Tests */,
 				CE01D9F22EAE17D0005BF168 /* Products */,
 				CE01DA0E2EAE1905005BF168 /* LICENSE */,
 				CE01DA0F2EAE1905005BF168 /* Package.swift */,
@@ -110,7 +116,8 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				CE01D9F32EAE17D0005BF168 /* SFSymbolIcon */,
+				CE01D9F32EAE17D0005BF168 /* Example */,
+				CE01DA1D2EAE1B11005BF168 /* Sources */,
 			);
 			name = SFSymbolIcon;
 			packageProductDependencies = (
@@ -133,7 +140,7 @@
 				CE01D9FF2EAE17D0005BF168 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				CE01DA002EAE17D0005BF168 /* SFSymbolIconTests */,
+				CE01DA002EAE17D0005BF168 /* Tests */,
 			);
 			name = SFSymbolIconTests;
 			packageProductDependencies = (
