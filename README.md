@@ -73,7 +73,7 @@ struct MyApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.SymbolIcon, SFSymbolIcon(warningLevel: .debug))
+                .environment(\.SymbolIcon, SFSymbolIcon(level: .debug))
         }
     }
 }
@@ -83,13 +83,13 @@ struct MyApp: App {
 
 ```swift
 // Debug level - prints warnings to console
-let symbolIcon = SFSymbolIcon(warningLevel: .debug)
+let symbolIcon = SFSymbolIcon(level: .debug)
 
 // Assert level - triggers assertion failure (default)
-let symbolIcon = SFSymbolIcon(warningLevel: .assert)
+let symbolIcon = SFSymbolIcon(level: .assert)
 
 // Fatal level - crashes the app
-let symbolIcon = SFSymbolIcon(warningLevel: .fatal)
+let symbolIcon = SFSymbolIcon(level: .fatal)
 ```
 
 ## API Reference
