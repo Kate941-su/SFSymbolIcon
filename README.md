@@ -69,13 +69,16 @@ import SwiftUI
 import SFSymbolIcon
 
 @main
-struct MyApp: App {
+struct AppTestApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.SymbolIcon, SFSymbolIcon(level: .debug))
         }
     }
+}
+
+extension EnvironmentValues {
+    @Entry var SymbolIcon: SFSymbolIcon = SFSymbolIcon(level: .assert)
 }
 ```
 

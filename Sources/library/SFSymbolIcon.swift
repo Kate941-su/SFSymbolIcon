@@ -19,7 +19,7 @@ public class SFSymbolIcon {
     private var level: SFSymbolAssertLevel
     private var cacheName: String? = nil
     
-    init(level: SFSymbolAssertLevel = .assert) {
+    public init(level: SFSymbolAssertLevel = .assert) {
         self.level = level
         loadAllSymbols()
     }
