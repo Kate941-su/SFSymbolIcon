@@ -5,13 +5,25 @@
 //  Created by Kaito Kitaya on 26.10.25.
 //
 
-import Testing
+import XCTest
 @testable import SFSymbolIcon
 
-struct SFSymbolIconTests {
-
-    @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+final class SFSymbolIconTests: XCTestCase {
+    
+    func testSymbolIconInitialization() throws {
+        let symbolIcon = SFSymbolIcon(warningLevel: .debug)
+        XCTAssertNotNil(symbolIcon)
     }
-
+    
+    func testIconSafeWithValidSymbol() throws {
+        let symbolIcon = SFSymbolIcon(warningLevel: .debug)
+        let icon = symbolIcon.IconSafe(systemName: "heart.fill")
+        XCTAssertNotNil(icon)
+    }
+    
+    func testIconSafeWithInvalidSymbol() throws {
+        let symbolIcon = SFSymbolIcon(warningLevel: .debug)
+        let icon = symbolIcon.IconSafe(systemName: "nonexistent.symbol")
+        XCTAssertNil(icon)
+    }
 }

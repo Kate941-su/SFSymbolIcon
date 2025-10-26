@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CE01D9FD2EAE17D0005BF168 /* SFSymbolIcon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE01D9F12EAE17D0005BF168 /* SFSymbolIcon.framework */; };
+		CE01DA122EAE1906005BF168 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = CE01DA0E2EAE1905005BF168 /* LICENSE */; };
+		CE01DA132EAE1906005BF168 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CE01DA102EAE1905005BF168 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +25,9 @@
 /* Begin PBXFileReference section */
 		CE01D9F12EAE17D0005BF168 /* SFSymbolIcon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SFSymbolIcon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE01D9FC2EAE17D0005BF168 /* SFSymbolIconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFSymbolIconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE01DA0E2EAE1905005BF168 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CE01DA0F2EAE1905005BF168 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		CE01DA102EAE1905005BF168 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -63,6 +68,9 @@
 				CE01D9F32EAE17D0005BF168 /* SFSymbolIcon */,
 				CE01DA002EAE17D0005BF168 /* SFSymbolIconTests */,
 				CE01D9F22EAE17D0005BF168 /* Products */,
+				CE01DA0E2EAE1905005BF168 /* LICENSE */,
+				CE01DA0F2EAE1905005BF168 /* Package.swift */,
+				CE01DA102EAE1905005BF168 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,6 +185,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE01DA122EAE1906005BF168 /* LICENSE in Resources */,
+				CE01DA132EAE1906005BF168 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
