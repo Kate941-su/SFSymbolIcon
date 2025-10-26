@@ -74,7 +74,6 @@ public class SFSymbolIcon {
                 allSymbols.append(symbolName)
             }
            }
-            print(allSymbols.count)
         } else {
             allSymbols = []
         }
